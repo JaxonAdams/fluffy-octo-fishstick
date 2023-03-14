@@ -1,1 +1,26 @@
-/* Styles */
+/* import fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+
+/* variable definitions */
+:root {
+  --title-font: "Oswald";
+  --primary-font: "Roboto";
+  --primary-bg-color: #FFFFFF;
+  --secondary-bg-color: #14213D;
+  --highlight-color: #FCA311;
+  --bg-dark: #000000;
+  --text-light: #E5E5E5;
+}
+
+/* styles */
+body {
+  font-family: var(--primary-font);
+  background-color: var(--white-color);
+  color: var(--bg-dark);
+}
+
+.title {
+  font-family: var(--title-font);
+  letter-spacing: 1px;
+  padding: 5px 20px;
+}
