@@ -13,14 +13,66 @@
 }
 
 /* styles */
+/* parent element */
 body {
   font-family: var(--primary-font);
   background-color: var(--white-color);
   color: var(--bg-dark);
 }
 
+
+/* utility classes */
+.highlight-txt {
+  color: var(--highlight-color);
+}
+
+.a-nostyle {
+  color: var(--bg-dark);
+  font-style: normal;
+  text-decoration: none;
+}
+
 .title {
   font-family: var(--title-font);
+  font-size: 4rem;
   letter-spacing: 1px;
   padding: 5px 20px;
+}
+
+.subtitle {
+  font-size: 1.7rem;
+  padding: 50px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* components */
+.header {
+  background-color: var(--secondary-bg-color);
+  color: var(--text-light);
+  margin: 0;
+  padding: 20px;
+}
+
+.header-title {
+  color: var(--text-light);
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.hero {
+  height: 60vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-title {
+  color: var(--secondary-bg-color);
+  margin: 0;
+  padding: 50px;
+  padding-top: 5px;
 }
