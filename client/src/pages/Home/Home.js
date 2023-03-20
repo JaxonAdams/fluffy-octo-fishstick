@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
-import Header from '../components/Header';
-import Hero from '../components/Hero';
+import Header from '../../components/header/Header';
+import Hero from '../../components/hero/Hero';
 
 const Home = () => {
   // update page title
@@ -13,6 +13,7 @@ const Home = () => {
     <div className='home'>
       <Header />
       <Hero />
+      <div style={{height: '1000px'}} />
     </div>
   );
 };
