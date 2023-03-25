@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 
 import Header from '../../components/header/Header';
 import Hero from '../../components/hero/Hero';
+import Hook from '../../components/hook/Hook';
 
 const Home = () => {
   // update page title
@@ -13,7 +14,7 @@ const Home = () => {
     <div className='home'>
       <Header />
       <Hero />
-      <div style={{height: '1000px'}} />
+      <Hook />
     </div>
   );
 };

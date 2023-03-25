@@ -1,0 +1,61 @@
+.hook {
+  width: 100%;
+}
+
+.hook-title {
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.hook-highlight {
+  color: var(--highlight-color);
+}
+
+.hl-other {
+  color: var(--secondary-bg-color);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes highlight-one {
+  from {
+    color: var(--bg-dark);
+  }
+
+  to {
+    color: var(--highlight-color);
+  }
+}
+
+@keyframes highlight-two {
+  from {
+    color: var(--bg-dark);
+  }
+
+  to {
+    color: var(--secondary-bg-color);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hook-title {
+    animation: fade-in linear 0.5s;
+  }
+
+  .hook-highlight {
+    animation: highlight-one ease-in 1s;
+  }
+
+  .hl-other {
+    animation: highlight-two ease-in 1s;
+  }
+}

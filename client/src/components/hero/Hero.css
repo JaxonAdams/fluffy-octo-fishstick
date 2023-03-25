@@ -49,21 +49,25 @@
 /* animations */
 @keyframes slide-in-right {
   from {
-    transform: translate(150%, -150%);
+    transform: translate(50%, -50%);
+    opacity: 0;
   }
 
   to {
     transform: translate(0%);
+    opacity: 1;
   }
 }
 
 @keyframes slide-in-left {
   from {
-    transform: translateX(-150%);
+    transform: translateX(-50%);
+    opacity: 0;
   }
 
   to {
     transform: translateX(0%);
+    opacity: 1;
   }
 }
 
@@ -73,7 +77,8 @@
   }
 
   .container-left.remove {
-    transform: translateX(-150%);
+    transform: translateX(-50%);
+    opacity: 0;
   }
   
   .container-right.visible {
@@ -81,6 +86,7 @@
   }
 
   .container-right.remove {
-    transform: translate(150%, -150%);
+    transform: translate(50%, -50%);
+    opacity: 0;
   }
 }
