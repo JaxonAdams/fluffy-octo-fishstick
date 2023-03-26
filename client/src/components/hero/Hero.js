@@ -4,7 +4,8 @@ import './Hero.css'
 import profile from '../../assets/jaxon.png';
 
 const Hero = () => {
-  // trigger animations
+  // trigger animations when visible
+  // otherwise, move elements away to trigger animations again
   const [slideIn, setSlideIn] = useState(false)
 
   useEffect(() => {

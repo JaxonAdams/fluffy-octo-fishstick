@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className='header'>
       <a className='a-nostyle' href='/'>
-        <h2 className='title header-title'>Hello World</h2>
+        <h2 className='title header-title'>Home</h2>
       </a>
     </header>
   );

@@ -15,6 +15,7 @@ const Home = () => {
       <Header />
       <Hero />
       <Hook />
+      {/* <div style={{height: '100vh'}} /> */}
     </div>
   );
 };
