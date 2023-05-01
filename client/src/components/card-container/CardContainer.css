@@ -9,6 +9,9 @@
 
 .card-container-title {
     font-size: 3rem;
+    margin: 0 auto 2rem auto;
+    width: 80%;
+    border-bottom: 3px solid var(--secondary-bg-color);
 }
 
 .card-container-flex {
