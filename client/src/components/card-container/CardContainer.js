@@ -10,7 +10,11 @@ const CardContainer = ({ contents }) => {
             <h2 className='title card-container-title'>{contents.title}</h2>
             <div className='card-container-flex'>
                 {contents.cards.map(element => {
-                    return <Card content={element} />
+                    return (
+                        <a className='a-nostyle' href={element.link} target='_Blank' rel='noreferrer'>
+                            <Card content={element} />
+                        </a>
+                    );
                 })}
             </div>
         </div>

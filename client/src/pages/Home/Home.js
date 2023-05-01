@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Github, Linkedin, Instagram } from 'react-bootstrap-icons';
 
 import Header from '../../components/header/Header';
 import Hero from '../../components/hero/Hero';
@@ -16,15 +17,21 @@ const Home = () => {
     cards: [
       {
         title: 'GitHub',
-        p: 'Bla bla bla bla bla bla bla bla bla bla bla.'
+        link: 'https://github.com/JaxonAdams',
+        icon: <Github className='icon github' />,
+        p: 'Check out my side projects!'
       },
       {
         title: 'LinkedIn',
-        p: 'Bla bla bla bla bla bla bla bla bla bla bla.'
+        link: 'https://www.linkedin.com/in/jaxon-adams-ba5743229/',
+        icon: <Linkedin className='icon linkedin' />,
+        p: 'Take a look at my work experience!'
       },
       {
         title: 'Instagram',
-        p: 'Bla bla bla bla bla bla bla bla bla bla bla.'
+        link: 'https://www.instagram.com/jj_adams01/',
+        icon: <Instagram className='icon instagram' />,
+        p: 'Get to know me!'
       }
     ]
   }

@@ -2,10 +2,40 @@
     padding: 0.5rem;
     border-radius: 20px;
     background-color: #e6e6e6;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.card:hover {
+    box-shadow: 0 0 5px  rgba(0,0,0,0.5);
+}
+
+.card>* {
+    margin: 1rem 0;
 }
 
 .card-title {
     margin: 0;
     padding: 0;
     font-size: 3.5rem;
+}
+
+.icon {
+    font-size: 4rem;
+    color: var(--secondary-bg-color);
+    transition: color 0.3s ease;
+}
+
+.card:hover>.icon.github {
+    color: #711c92;
+}
+
+.card:hover>.icon.linkedin {
+    color: #0072b1;
+}
+
+.card:hover>.icon.instagram {
+    color: #fa7e1e;
 }
