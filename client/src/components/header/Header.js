@@ -1,4 +1,3 @@
-// WIP -- to be updated
 import React from 'react';
 
 import { HouseFill } from 'react-bootstrap-icons';
