@@ -5,6 +5,7 @@ import Header from '../../components/header/Header';
 import Hero from '../../components/hero/Hero';
 import Hook from '../../components/hook/Hook';
 import CardContainer from '../../components/card-container/CardContainer';
+import Footer from '../../components/footer/Footer';
 
 const Home = () => {
   // update page title
@@ -42,7 +43,7 @@ const Home = () => {
       <Hero />
       <Hook />
       <CardContainer contents={cardContainerCards} />
-      {/* <div style={{height: '100vh'}} /> */}
+      <Footer />      
     </div>
   );
 };
