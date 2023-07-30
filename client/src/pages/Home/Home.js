@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Github, Linkedin, Instagram } from 'react-bootstrap-icons';
 
 import './Home.css';
 
 import Header from '../../components/header/Header';
+import Menu from '../../components/menu/Menu';
 import Hero from '../../components/hero/Hero';
 import Hook from '../../components/hook/Hook';
 import CardContainer from '../../components/card-container/CardContainer';
@@ -14,6 +15,9 @@ const Home = () => {
   useEffect(() => {
     document.title = 'Jaxon Adams - Home';
   }, []);
+
+  // this will be used to open/close the menu
+  const [showMenu, setShowMenu] = useState(false);
 
   const cardContainerCards = {
     title: "Let's Connect!",
@@ -41,7 +45,8 @@ const Home = () => {
 
   return (
     <div className='home'>
-      <Header />
+      <Header showMenu={showMenu} setShowMenu={setShowMenu} />
+      <Menu showMenu={showMenu} />
       <Hero />
       <Hook />
       <CardContainer contents={cardContainerCards} />
