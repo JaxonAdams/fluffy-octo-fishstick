@@ -2,6 +2,7 @@
 
 .hero {
   height: 60vh;
+  width: 100vw;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -95,5 +96,30 @@
   .container-right.remove {
     transform: translate(50%, -50%);
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .profile-img {
+    transform: scale(1.2);
+  }
+
+  .profile-bg {
+    transform: rotate(45deg) scale(1.2);
+    bottom: -30px;
+    left: 190px;
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+  }
+
+  .hero-container {
+    margin: 50px;
+    padding-top: 35px;
+  }
+
+  .container-left {
+    margin-left: 100px;
   }
 }

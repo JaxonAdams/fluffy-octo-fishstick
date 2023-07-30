@@ -11,7 +11,7 @@ const CardContainer = ({ contents }) => {
             <div className='card-container-flex'>
                 {contents.cards.map(element => {
                     return (
-                        <a className='a-nostyle' href={element.link} target='_Blank' rel='noreferrer'>
+                        <a className='a-nostyle' href={element.link} target='_Blank' rel='noreferrer' key={element.title}>
                             <Card content={element} />
                         </a>
                     );

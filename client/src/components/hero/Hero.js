@@ -16,7 +16,6 @@ const Hero = () => {
     const observerCallback = (entries) => {
       entries.forEach(entry => {
         setSlideIn(true ? entry.isIntersecting : false);
-        console.log(slideIn);
       });
     };
 

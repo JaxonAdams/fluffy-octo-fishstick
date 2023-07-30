@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { Github, Linkedin, Instagram } from 'react-bootstrap-icons';
 
+import './Home.css';
+
 import Header from '../../components/header/Header';
 import Hero from '../../components/hero/Hero';
 import Hook from '../../components/hook/Hook';
