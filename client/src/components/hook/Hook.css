@@ -59,3 +59,13 @@
     animation: highlight-two ease-in 1s;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .hook-title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    width: 90%;
+  }
+}

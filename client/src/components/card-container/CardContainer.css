@@ -24,3 +24,55 @@
 .card-container-flex>a {
     width: 28%;
 }
+
+@media screen and (max-width: 1020px) {
+    .card-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .card-container-flex>a {
+        width: 40%;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .card-container-flex {
+        flex-direction: column;
+    }
+
+    .card-container-flex>a {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-container {
+        margin: 50px auto 20px auto;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card-container-flex {
+        align-items: center;
+        width: 90%;
+        padding: 0;
+    }
+    
+    .card-container-flex>a {
+        width: 80%;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+}
