@@ -14,6 +14,9 @@ const Home = () => {
   // update page title
   useEffect(() => {
     document.title = 'Jaxon Adams - Home';
+    fetch('/api/')
+      .then(res => res.json())
+      .then(data => console.log(data));
   }, []);
 
   // this will be used to open/close the menu

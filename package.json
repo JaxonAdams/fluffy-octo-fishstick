@@ -1,0 +1,27 @@
+{
+    "name": "jaxon_portfolio",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "start": "cd client && npm run start",
+        "dev": "concurrently \"cd client && npm start\" \"cd server && flask -A server run\"",
+        "build": "cd client && react-scripts build",
+        "test": "cd client && react-scripts test",
+        "eject": "cd client && react-scripts eject"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.0"
+    }
+}
